@@ -51,7 +51,7 @@ function draw() {
               document.getElementById("dect_objects").innerHTML = input + " found";
           } else
           {
-            document.getElementById("dect_objects").innerHTML = input + "not found";
+            document.getElementById("dect_objects").innerHTML = input + " not found";
           }
           fill("#FF0000");
           percent = floor(objects[i].confidence * 100);
