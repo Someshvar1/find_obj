@@ -49,9 +49,18 @@ function draw() {
           if (input == obj)
           {
               document.getElementById("dect_objects").innerHTML = input + " found";
+              var synth=window.speechSynthesis;
+              speak_data=input+"found";
+              var utterThis=new SpeechSynthesisUtterance(speak_data);
+              synth.speak(utterThis);
           } else
           {
             document.getElementById("dect_objects").innerHTML = input + " not found";
+            document.getElementById("dect_objects").innerHTML = input + " found";
+              var synth=window.speechSynthesis;
+              speak_data=input+"not found";
+              var utterThis=new SpeechSynthesisUtterance(speak_data);
+              synth.speak(utterThis);
           }
           fill("#FF0000");
           percent = floor(objects[i].confidence * 100);
