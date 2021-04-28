@@ -56,7 +56,6 @@ function draw() {
           } else
           {
             document.getElementById("dect_objects").innerHTML = input + " not found";
-            document.getElementById("dect_objects").innerHTML = input + " found";
               var synth=window.speechSynthesis;
               speak_data=input+"not found";
               var utterThis=new SpeechSynthesisUtterance(speak_data);
